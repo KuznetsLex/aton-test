@@ -1,0 +1,34 @@
+Running with gitlab-runner 17.11.0 (0f67ff19)
+  on 8e3c9dc631ab shLuDCxyZ, system ID: r_oxplT985tI20
+Preparing the "docker" executor
+00:06
+Using Docker executor with image docker:dind ...
+Pulling docker image docker:dind ...
+Using docker image sha256:e3a7b304f65b8c7854db1322ca4f26dfa3729c3db9ce620aa72aa9ff18a60b38 for docker:dind with digest docker@sha256:f49e1c71b5d9f8ebe53715f78996ce42b8be4b1ec03875d187dfe3c03de1dc00 ...
+Preparing environment
+00:00
+Running on runner-shludcxyz-project-69398674-concurrent-0 via efd8940e06b5...
+Getting source from Git repository
+00:03
+Fetching changes with git depth set to 20...
+Reinitialized existing Git repository in /builds/kuznets_lex/Shortest-path-problem/.git/
+Created fresh repository.
+Checking out b3322dcf as detached HEAD (ref is master)...
+Removing target/
+Skipping Git submodules setup
+Downloading artifacts
+00:04
+Downloading artifacts for test-job (9867563225)...
+Downloading artifacts from coordinator... ok        host=cdn.artifacts.gitlab-static.net id=9867563225 responseStatus=200 OK token=eyJraWQiO
+Executing "step_script" stage of the job script
+00:00
+Using docker image sha256:e3a7b304f65b8c7854db1322ca4f26dfa3729c3db9ce620aa72aa9ff18a60b38 for docker:dind with digest docker@sha256:f49e1c71b5d9f8ebe53715f78996ce42b8be4b1ec03875d187dfe3c03de1dc00 ...
+$ docker compose up -d
+time="2025-04-29T15:54:36Z" level=warning msg="/builds/kuznets_lex/Shortest-path-problem/docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion"
+ Container shortest-path-problem-api-1  Recreate
+ Container shortest-path-problem-api-1  Recreated
+ Container shortest-path-problem-api-1  Starting
+ Container shortest-path-problem-api-1  Started
+Cleaning up project directory and file based variables
+00:01
+Job succeeded

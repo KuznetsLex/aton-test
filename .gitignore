@@ -102,9 +102,6 @@ local.properties
 # Compiled class file
 *.class
 
-# Log file
-*.log
-
 # BlueJ files
 *.ctxt
 
@@ -205,14 +202,6 @@ target/
 !**/src/main/**/target/
 !**/src/test/**/target/
 
-### IntelliJ IDEA ###
-.idea/
-.idea/misc.xml
-.idea/vcs.xml
-.idea/workspace.xml
-*.iws
-*.iml
-*.ipr
 
 ### VS Code ###
 .vscode/
