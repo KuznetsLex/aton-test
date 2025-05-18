@@ -1,8 +1,0 @@
-version: '3.8'
-
-services:
-  ansible-runner:
-    build: .
-    volumes:
-      - .:/ansible
-    container_name: ansible_nginx_runner
