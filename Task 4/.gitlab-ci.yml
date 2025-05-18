@@ -1,0 +1,27 @@
+stages: 
+  - build   
+  - test
+  - deploy
+
+build-job:    
+  stage: build
+  script:
+    - docker compose build
+
+test-job:
+  stage: test
+  image: maven:amazoncorretto
+  script: 
+    - mvn test
+  artifacts:
+    when: always
+    reports:
+      junit: target/surefire-reports/TEST-*.xml
+    paths:
+      - target/surefire-reports/
+      
+deploy-job:    
+  stage: deploy
+  script:
+    - docker compose up -d
+    

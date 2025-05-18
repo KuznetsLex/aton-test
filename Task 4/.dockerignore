@@ -1,0 +1,30 @@
+# Git
+.git
+.gitignore
+
+# Node / Python cache
+node_modules
+__pycache__
+*.pyc
+
+# macOS files
+.DS_Store
+
+# Dockerignore itself
+.dockerignore
+
+# Logs & env
+*.log
+*.env
+*.env.*
+.envrc
+
+# IDE settings
+.vscode
+.idea
+
+# Optional: test data
+tests/
+test/
+*.test.*
+coverage/
